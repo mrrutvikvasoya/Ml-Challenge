@@ -11,6 +11,7 @@ Advanced machine learning project implementing ensemble methods and rule discove
 ## 📊 Project Overview
 
 This project tackles two prediction challenges on a dataset with 10,000 samples and 273 features:
+dataset : https://drive.google.com/drive/folders/1GXB-f_2PaOfgUCTWCociwLuEO8StXsFN?usp=sharing
 
 **Part 1: Continuous Target Prediction**
 - Ensemble learning with polynomial feature engineering
