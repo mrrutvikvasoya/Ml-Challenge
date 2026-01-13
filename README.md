@@ -55,7 +55,7 @@ python src/predict.py --input data.csv
 1. **Analysis** - Correlation + Decision Tree exploration
 2. **Discovery** - Piecewise-linear structure identification
 3. **Rules** - 4 regions based on feat_121 thresholds
-4. 
+ 
 ## 🔬 Key Features
 
 - **Zero Data Leakage** - Strict train/val/test separation
