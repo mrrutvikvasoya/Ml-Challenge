@@ -54,21 +54,7 @@ python src/predict.py --input data.csv
 1. **Analysis** - Correlation + Decision Tree exploration
 2. **Discovery** - Piecewise-linear structure identification
 3. **Rules** - 4 regions based on feat_121 thresholds
-
-## 📦 Project Structure
-
-```
-├── data/                  # Dataset files
-├── notebooks/             # Jupyter notebooks
-├── src/                   # Source code
-│   ├── preprocessing.py
-│   ├── model_training.py
-│   └── rule_extraction.py
-├── models/                # Trained models
-├── requirements.txt
-└── README.md
-```
-
+4. 
 ## 🔬 Key Features
 
 - **Zero Data Leakage** - Strict train/val/test separation
@@ -85,33 +71,10 @@ python src/predict.py --input data.csv
 | Continuous | 0.9686 | 0.0424 | 119 (polynomial) |
 | Rule-Based | 1.0000 | 0.0000 | 4 (original) |
 
-## 💡 Usage Examples
-
-**Continuous Prediction:**
-```python
-from src.model_training import ContinuousPredictor
-
-predictor = ContinuousPredictor()
-predictions = predictor.predict(X_test)
-```
-
-**Rule-Based Prediction:**
-```python
-def predict_target02(f121, f225, f259, f195):
-    if f121 < 0.2:
-        return 1.75*f225 - 1.85*f259 - 0.75*f195
-    elif f121 < 0.5:
-        return -0.65*f225 + 1.55*f259 + 0.55*f195
-    elif f121 < 0.7:
-        return 0.55*f225 + 1.25*f259 - 1.65*f195
-    else:
-        return 0.75*f225 - 0.55*f259 + 1.55*f195
-```
 
 ## 📄 License
 
 MIT License - feel free to use for learning and research.
-
 ---
 
 ⭐ **Star this repo** if you find it useful!
